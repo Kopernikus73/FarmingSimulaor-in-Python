@@ -1,0 +1,10 @@
+(14.02.2024)alpha0.2:
+- added 'inv' command and added a save file of it
+- added 'purse' command and added a save file of it
+
+- moved the save files to a folder
+
+	planned:
+	- shop
+	- tools
+	- 'harvest', 'plant' and 'sell' commands so you can finally play the game
