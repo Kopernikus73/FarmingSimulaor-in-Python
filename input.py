@@ -5,14 +5,14 @@ import savestate
 field = ["","",
          "",""]
 IN = ["","",""]
-game = True
-consoleList = ["help","field.show","legend","exit"]
+game_on = True
+consoleList = ["help","field.show","legend","inv","purse","exit"]
 
 
 legend = {"A" : "FieldCoordinate", "a" : "FieldType", "0" : "FieldLevel"}
 
 def error(i):
-    A.p(f'invalid Input >>>{i}<<<',"italic")
+    A.p(f'invalid Input >>> {i} <<<',"italic")
 
 def getIn(t : str,i : int):
     IN[i] = input(t + "\n<player> : ")
@@ -23,7 +23,7 @@ def getIn(t : str,i : int):
         getIn(t,i)
 
 def checkIn(i : int):
-    global game
+    global game_on
 
     if IN[i] == consoleList[1]:
         A.p(fieldLayout())
@@ -31,13 +31,19 @@ def checkIn(i : int):
         print('for "Aa0" : ')
         print(legend)
     if IN[i] == consoleList[3]:
-        game = False
+        print(savestate.inv)
+    if IN[i] == consoleList[4]:
+        print(str(savestate.money) + "€")
+    if IN[i] == consoleList[-1]:
+        game_on = False
 
     if IN[i] == consoleList[0]:
         print(f'{consoleList[0]}        -> Lists all available commands')
         print(f'{consoleList[1]}  -> Shows the current field layout')
         print(f'{consoleList[2]}      -> Shows the meaning of the symbols on the field')
-        print(f'{consoleList[3]}        -> exits the game')
+        print(f'{consoleList[3]}         -> shows your current inventory')
+        print(f'{consoleList[4]}       -> shows how much money you have')
+        print(f'{consoleList[-1]}        -> exits the game')
 
 
 
