@@ -1,4 +1,4 @@
-# Farming Simulator alpha0.1
+# Farming Simulator alpha0.2
 
 Hello guys,
 
