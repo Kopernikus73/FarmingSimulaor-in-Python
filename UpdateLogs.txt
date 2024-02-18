@@ -8,3 +8,21 @@
 	- shop
 	- tools
 	- 'harvest', 'plant' and 'sell' commands so you can finally play the game
+
+
+(19.02.2024)alpha0.3:
+- added a plant function
+- changed the fiel.show function
+- merged "purse" and "inv" into "player.data"
+- added more properties to the Field
+
+	planned: 
+	- harvest funtion
+	- sell funtion
+	- tools
+	- add funtionality to mutations
+
+	bugs/problems:
+	- loading is broken
+	- growing of the plante is weird
+	- mutations can be forced to be obtained
