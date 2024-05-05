@@ -15,3 +15,8 @@ USE OF CODE
 You can use my code, for anything, if you want :D
 There is definitely a whole bunch of better code that does the same thing as mine
 But if you want to use it. Go on :)
+
+
+--------
+Note:
+The game is currently pretty broken
